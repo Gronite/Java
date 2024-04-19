@@ -1,0 +1,99 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 0px;
+  animation: mudarfundo 1s linear infinite alternate;
+}
+
+@keyframes mudarfundo {
+  0% {
+    background-color: rgba(68, 23, 114, 1);
+  }
+  100% {
+    background-color: rgba(38, 23, 114, 1);
+  }
+}
+
+.adiciona {
+  position: relative;
+  background-color:#ffffee;
+  max-width: 600px;
+  padding: 50px;
+  padding-top: 15px;
+  border-radius: 5px;
+  box-shadow: 
+    0px 0px 50px 10px rgba(38, 23, 114, 1);
+  border-width: 1px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#mostrarTarefas {
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+button {
+  color: #fff;
+  background-color: #539eee;
+  border-radius: 5px;
+  border-color: #54ead4;
+  padding: 10px;
+  font-size: 15px;
+}
+
+input {
+
+  font-size: 15px;
+
+}
+
+.lista {
+  position: relative;
+  max-width: 400px;
+  margin-top: 20px;
+  padding: 20px;
+  background-color:#ffffee;
+  border-radius: 8px;
+  display: none;
+  box-shadow: 
+  0 0 10px 10px rgba(68, 23, 114, 1);
+  margin-bottom: 40px;
+}
+
+.lista::after{
+  position: absolute;
+  content: url("img/icons8-lista-de-tarefas.gif");
+  right: 20px;
+  top: 28px;
+}
+
+.lista h2 {
+  margin-bottom: 30px;
+}
+
+.itemlista {
+  display:grid;
+  list-style-type: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: 19px;
+  border-width: 5px;
+  border-radius: 10px;
+  border-color:rgba(177, 239, 245, 1);
+  border-style: solid;
+  position: relative;
+  right: 20px;
+  background-color :#fcf6ff;
+  color: #111;
+}
+
+.botaoeditar, .botaodeletar {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
